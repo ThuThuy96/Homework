@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin tức 24h</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <style>
+        .wrap{
+            height: 1200px;
+            background: white;
+        }
+        .header{
+            background: black;
+        }
+        .wrap-header{
+            width: 1200px;
+            height: 43px;
+            margin: 0px auto;
+        }
+        .header .logo{
+            float: left;
+            display: inline;
+            height: 43px;
+        }
+        .header .search{
+            float: left;
+            display: inline;
+            padding: 5px;
+        }
+        .header .search button{
+            background: #ffa223;
+            color: white;
+            padding: 7px;
+            border: 0px;
+            font-size: 12px;
+            font-family: Arial;
+        }
+        .header .apps{
+            margin: 0;
+        }
+        .header ul li{
+            float: left;
+            display: inline;
+            padding: 11px;
+            text-decoration: none;
+            font-family: Arial;
+        }
+        .header .apps a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+        }
+        .content{
+            height: 500px;
+        }
+        .content .menu{
+            height: 45px;
+            width: 1200px;
+            margin: 0px auto;
+        }
+        .content .menu ul{
+            background-color: #f8ffed;
+            float: left;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .content .menu ul li{
+            float: left;
+            list-style: none;
+            height: 45px;
+            margin: 0px;
+            padding-top: 12px;
+            padding-right: 4px;
+            display: inline;
+        }
+        .content .menu ul li a{
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .content .menu ul .a{
+            border-top: 2px solid blue;
+            padding-top: 5px;
+            padding-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="wrap-header">
+            <a href="#" class="logo" title="Zing news">
+                <img src="image/LogoZing.JPG" width="94" height="43">
+            </a>
+            <form class="search">
+                <input type="search" placeholder="Nhập nội dung cần tìm...">
+                <button type="submit" id="search_button">TÌM KIẾM</button>
+            </form>
+
+            <ul class="apps">
+                <li class="mp3"><a href="#" title="Zing MP3">MP3</a> </li>
+                <li class="tv"><a href="#" title="Zing TV">TV</a> </li>
+                <li class="me"><a href="#" title="Zing Me">ME</a> </li>
+            </ul>
+        </div>
+    </div>
+    <li class="a">
+        <a href="#">
+            <img src="image/Quangcao.JPG" >
+        </a>
+    </li>
+    <hr  width="100%" size="5px" align="center" color="red" />
+    <div class="content">
+        <div class="menu">
+            <ul>
+                <li  href="#">Thời sự</a> </li>
+                <li  href="#">Thế giới</a> </li>
+                <li  href="#">Kinh doanh</a> </li>
+                <li  href="#">Pháp luật</a> </li>
+                <li  href="#">Xuất bản</> </li>
+                <li  href="#">Thể thao</> </li>
+                <li  href="#">Công nghệ</> </li>
+                <li  href="#">Xe 360</> </li>
+                <li  href="#">Giải trí</> </li>
+                <li  href="#">Âm nhạc</> </li>
+                <li  href="#">Phim ảnh</> </li>
+                <li  href="#">Thời trang</> </li>
+                <li  href="#">Sống trẻ</> </li>
+                <li  href="#">Giáo dục</> </li>
+                <li  href="#">Sức khỏe</> </li>
+                <li  href="#">Du lịch</> </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
