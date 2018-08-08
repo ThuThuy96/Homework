@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="normalize.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .container .menu{
+            background: orange;
+        }
+        .container .menu ul li{
+            list-style: none;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .container .menu li a {
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+
+        }
+       .container .menu ul > li:hover ul.submenu{
+           display: block;
+
+       }
+        ul.submenu li {
+            float: none !important;
+        }
+        ul.submenu{
+            display: none;
+            width: 100px;
+        }
+        .container .menu ul.submenu li a {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="/">Thời sự</a>
+                <ul class="submenu">
+                    <li><a href="/">abbb</a> </li>
+                    <li><a href="/">abbb</a> </li>
+                    <li><a href="/">abbb</a> </li>
+                    <li><a href="/">abbb</a> </li>
+                    <li><a href="/">abbb</a> </li>
+                </ul>
+            </li>
+            <li><a href="/">Kinh tế</a> </li>
+            <li><a href="/">Thế giới</a> </li>
+            <li><a href="/">văn hóa</a> </li>
+            <li><a href="/">Giáo dục</a> </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

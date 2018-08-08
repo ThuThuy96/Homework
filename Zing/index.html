@@ -52,6 +52,8 @@
         }
         .content{
             height: 500px;
+            width: 800px;
+            margin: 0 auto;
         }
         .content .menu{
             height: 45px;
@@ -64,6 +66,8 @@
             height: 100%;
             margin: 0px;
             padding: 0px;
+            list-style: none;
+            overflow: hidden;
         }
         .content .menu ul li{
             float: left;
@@ -73,16 +77,37 @@
             padding-top: 12px;
             padding-right: 4px;
             display: inline;
+            background: rgba(255, 165, 0, 0);
         }
         .content .menu ul li a{
             text-decoration: none;
-            padding: 0px;
             margin: 0px;
+            padding: 10px;
+            display: inline-block;
+            border-right: 1px solid #FFF;
         }
-        .content .menu ul .a{
+        .content .menu ul a{
             border-top: 2px solid blue;
             padding-top: 5px;
             padding-right: 0px;
+
+        }
+        .content .menu > ul > li:hover ul.sub-menu {
+            display: block;
+        }
+        ul.sub-menu {
+            display: none;
+            width: 100%;
+        }
+        ul.sub-menu li {
+            float: none !important;
+        }
+        .content .menu ul.sub-menu li a {
+            border-right: none;
+        }
+        .content .menu ul.sub-menu li a:hover {
+            color: blue;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -115,22 +140,128 @@
     <div class="content">
         <div class="menu">
             <ul>
-                <li  href="#">Thời sự</a> </li>
-                <li  href="#">Thế giới</a> </li>
-                <li  href="#">Kinh doanh</a> </li>
-                <li  href="#">Pháp luật</a> </li>
-                <li  href="#">Xuất bản</> </li>
-                <li  href="#">Thể thao</> </li>
-                <li  href="#">Công nghệ</> </li>
-                <li  href="#">Xe 360</> </li>
-                <li  href="#">Giải trí</> </li>
-                <li  href="#">Âm nhạc</> </li>
-                <li  href="#">Phim ảnh</> </li>
-                <li  href="#">Thời trang</> </li>
-                <li  href="#">Sống trẻ</> </li>
-                <li  href="#">Giáo dục</> </li>
-                <li  href="#">Sức khỏe</> </li>
-                <li  href="#">Du lịch</> </li>
+                <li  <a href="#">Thời sự</a>
+                    <ul class="sub-menu">
+                        <li href="/">Giao thông</li>
+                        <li href="/">Đô thị</li>
+                        <li href="/">Đời sống</li>
+                        <li href="/">Quốc phòng</li>
+                        <li href="/">Ảnh và video</li>
+                    </ul>
+                </li>
+                <li <a href="#">Thế giới</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Ảnh và video</a></li>
+                        <li><a href="#">Quân sự</a></li>
+                        <li><a href="#">Tư liệu</a></li>
+                        <li><a href="#">Phân tích</a></li>
+                        <li><a href="#">Người Việt 4 phương</a></li>
+                    </ul>
+                </li>
+                <li <a href="#">Kinh doanh</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Tài Chính</a></li>
+                        <li><a href="#">Chứng khoán</a></li>
+                        <li><a href="#">Bất động sản</a></li>
+                        <li><a href="#">Doanh nhân</a></li>
+                    </ul>
+                </li>
+                <li  <a href="#">Pháp luật</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Pháp đình</a></li>
+                        <li><a href="#">Vụ án</a></li>
+                    </ul>
+                </li>
+                <li  <a href="#">Xuất bản</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Tin tức xuất bản</a></li>
+                        <li><a href="#">Sách hay</a></li>
+                        <li><a href="#">Tác giả</a></li>
+                    </ul>
+                </li>
+                <li  <a href="#">Thể thao</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Ảnh và video</a></li>
+                        <li><a href="#">Quân sự</a></li>
+                        <li><a href="#">Tư liệu</a></li>
+                        <li><a href="#">Phân tích</a></li>
+                        <li><a href="#">Người Việt 4 phương</a></li>
+                </ul>
+                </li>
+                <li  <a href="#">Công nghệ</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                    <li><a href="#">Ứng dụng di động</a></li>
+                </ul>
+                </li>
+                <li  <a href="#">Xe 360</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Xe máy</a></li>
+                    <li><a href="#">Ô tô</a></li>
+                    <li><a href="#">Xe độ</a></li>
+                    <li><a href="#">Siêu xe</a></li>
+                </ul>
+                </li>
+                <li  href="#">Giải trí</>
+                <ul class="sub-menu">
+                    <li><a href="#">Sao Việt</a></li>
+                    <li><a href="#">Sao Châu Á</a></li>
+                    <li><a href="#">Sao Hollwood</a></li>
+                </ul>
+                </li>
+                <li  href="#">Âm nhạc</>
+                <ul class="sub-menu">
+                    <li><a href="#">Nhạc Việt</a></li>
+                    <li><a href="#">Nhạc Hàn</a></li>
+                    <li><a href="#">Nhạc Âu Mỹ</a></li>
+                    <li><a href="#">#ZingChart</a></li>
+                </ul>
+                </li>
+                <li  href="#">Phim ảnh</>
+                <ul class="sub-menu">
+                    <li><a href="#">Phim chiếu rạp</a></li>
+                    <li><a href="#">Phim tryền hình</a></li>
+                    <li><a href="#">Game show</a></li>
+                </ul>
+                </li>
+                <li  href="#">Thời trang</>
+                <ul class="sub-menu">
+                    <li><a href="#">Thời trang sao</a></li>
+                    <li><a href="#">Mặc đẹp</a></li>
+                    <li><a href="#">Làm đẹp</a></li>
+                </ul>
+                </li>
+                <li  href="#">Sống trẻ</>
+                <ul class="sub-menu">
+                    <li><a href="#">Gương mặt trẻ</a></li>
+                    <li><a href="#">Cộng đồng mạng</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                </ul>
+                </li>
+                <li  href="#">Giáo dục</>
+                <ul class="sub-menu">
+                    <li><a href="#">Tuyển sinh 2018</a></li>
+                    <li><a href="#">Tư vấn </a></li>
+                    <li><a href="#">Du học</a></li>
+                    <li><a href="#">Học tiếng anh</a></li>
+                </ul>
+                </li>
+                <li  href="#">Sức khỏe</>
+                <ul class="sub-menu">
+                    <li><a href="#">Khỏe đẹp</a></li>
+                    <li><a href="#">Dinh dưỡng</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Bệnh thường gặp</a></li>
+                </ul>
+                </li>
+                <li  href="#">Du lịch</>
+                <ul class="sub-menu">
+                    <li><a href="#">Địa điểm du lịch</a></li>
+                    <li><a href="#">Kinh nghiệm du lịch</a></li>
+                    <li><a href="#">Phượt</a></li>
+                </ul>
+                </li>
             </ul>
         </div>
     </div>
